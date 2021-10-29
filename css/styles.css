@@ -1,0 +1,189 @@
+/* главние цвета страницы */
+:root {
+--background-color-body: #fff   ; 
+--color-content: #757575;
+--color-head-basic: #212121;
+--color-head-second:#2196F3;
+
+
+}
+
+/* ----------body-------------- */
+body {
+    
+    background-color: var(--background-color-body) ;
+    color: var(--color-content);
+    font-family: Roboto , arial ;
+    
+}
+
+    ul{ list-style: none;}
+    a { text-decoration: none;}
+
+
+/* -----------header------------- */
+
+/* логотип */
+
+    .color-logo-basic,
+    .color-logo-second,
+    .color-logo-footer {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+   
+}
+    .color-logo-basic{color: var(--color-head-basic);}
+    .color-logo-second {color: var(--color-head-second)}
+    .color-logo-footer{ color: var(--background-color-body);}
+
+/* навигация */
+    .nav-stile,
+    .nav-stile-contact{
+       
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;}
+
+    .nav-stile{
+     color: var(--color-head-basic);}
+    .nav-stile-contact{
+        color: var(--color-content);
+    }
+     
+    .nav-stile-contact:hover,
+    .nav-stile-contact:focus,
+    .nav-stile:hover,
+    .nav-stile:focus{
+     color: var(--color-head-second);
+     }
+   
+ 
+ /*  ---------------------main--------------------- */
+ /* заказ услуг */
+ .hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--background-color-body);
+    letter-spacing: 0.06em;
+    background-color: #2F303A;
+    text-align: center;
+ }
+ .hero-button{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+/* -----------курсор------------ */
+    cursor: pointer;
+/* ----------------------------- */
+    color: var(--background-color-body);
+    background-color: var(--color-head-second);
+ }
+ .hero-button:hover,
+ .hero-button:focus{
+     background-color:tomato
+ }
+ /* наши качества */
+
+ .quality-title-none{ color: var(--background-color-body);}
+
+ .quality-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;  
+    color: var(--color-head-basic);        
+ }
+ .quality-desc{
+    font-size: 14px;
+    line-height: 1.7;
+    
+ }
+ /* чем мы занимаемся */
+
+ .titles{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-head-basic);
+ }
+ /* команда */
+ .team-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em  ;
+    color: var(--color-head-basic);
+ }
+.team-profession{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em}
+    
+
+/* --------------footer------------- */
+.address-street,
+.address-info{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    cursor: default}
+    
+
+ .address-street{color: var(--background-color-body);}
+ .address-info {color: rgba(255, 255, 255, 0.6)}  
+
+
+
+.footer{
+    background-color: #2F303A;
+
+    /* ----------------------------------------------------------- */
+    /* -----Портфолио----- */
+}
+/* навигация */
+.portfolio-button{
+    font-family:Roboto ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-head-basic);
+    background-color: var(--background-color-body);
+    
+    
+}
+.portfolio-button:hover,
+.portfolio-button:focus
+{
+    background-color: var(--color-head-second);
+    color: var(--background-color-body);
+}
+/* портфолио */
+.portfolio-title-none{color: var(--background-color-body);}
+.portfolio-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--color-head-basic);
+}
+.poltfolio-desc{
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--color-content);
+    }
