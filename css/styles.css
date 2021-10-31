@@ -4,12 +4,13 @@
 --color-content: #757575;
 --color-head-basic: #212121;
 --color-head-second:#2196F3;
+
 }
 
 /* ----------body-------------- */
 body {
     
-    background-color: var(--background-color-body) ;
+    background-color: var(--background-color-container) ;
     color: var(--color-content);
     font-family: Roboto , arial ;
     
@@ -17,7 +18,8 @@ body {
     h1,h2,h3,ul
      {margin: 0;}
 
-    ul{ list-style: none;}
+    ul{ list-style: none;
+        padding-inline-start: 0px}
 
     a { text-decoration: none;}
 
@@ -26,21 +28,27 @@ body {
 /* ---------container-------- */
 .container{
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 94px 15px;
+    
     margin-left: auto;
     margin-right: auto;
-  
-   
+    
+
     
 }
 
 /* -----------header------------- */
 
-header>.container
-    {display: flex; 
-    align-items: center;  
-                 }
+.header
+    {   
+        width: 1600px;
+        margin: 0 auto;
+        display: flex; 
+        align-items: center;  
+        padding: 0 215px; 
+
+        
+    }
      
 
 
@@ -125,11 +133,6 @@ header>.container
 
 .hero{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    width: 700px;
-    
     padding: 200px ;
     text-align: center;
     
@@ -179,10 +182,6 @@ header>.container
 
  .quality-item{
      display: flex;
-     
-     
-     
-    
  }
 
  .quality-title{
@@ -219,11 +218,8 @@ header>.container
  .title-prof-item{
      display: flex;
      justify-content:space-between
-
      
  }
- 
-
  /* команда */
 .team-title{
     margin-top: 188px;
@@ -266,9 +262,8 @@ header>.container
     width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 94px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 215px
+   
 }
 .address{
     padding-left: 0;
@@ -324,7 +319,7 @@ header>.container
     margin-left: 215px;
     margin-right: 215px;
     justify-content: space-between;
-    margin-top: 95px;
+    
     margin-bottom: 50px;
 }
 
@@ -340,20 +335,21 @@ header>.container
 
     color: var(--color-head-basic);
     background-color: var(--background-color-body);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
     border-color: inherit;
+    border-radius: 4px;
+    
 }
- 
-        
- 
 
 .portfolio-button:hover,
 .portfolio-button:focus
 {
     background-color: var(--color-head-second);
     color: var(--background-color-body);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border-color: var(--color-head-second);
 }
+
 /* портфолио */
 .portfolio-title-none{color: var(--background-color-body);}
 .portfolio-title{
