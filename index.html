@@ -15,8 +15,8 @@
     
 </head>
 <body>
-    <header class="header">
-        
+    <header class="header-border">
+    <div class="container">
         <!-- логотип -->
         <a href="#" class="link-logo"><span class="color-logo-second">Web</span><span class="color-logo-basic">Studio</span> </a>
         <!-- навигация -->
@@ -31,18 +31,21 @@
            <li class="item"> <a class="link-contact" href="info@devstudio.com" target="_blank"> info@devstudio.com</a> </li>
            <li class="item"><a class="link-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-        
+    </div>
     </header>
     <main>
         <!-- заказ услуг -->
-    <div class="container">
-        <section class="hero">
-            <h1 class="hero-title" >ЭФФЕКТИВНЫЕ РЕШЕНИЕ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+    <div class="fon">
+        <section class="container">
+            <div class="button-container">
+                <h1 class="hero-title" >ЭФФЕКТИВНЫЕ РЕШЕНИЕ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                <button type="button" class="hero-button">Заказать услугу</button>
+            </div>
+            
         </section>
-     
+    </div>
         <!-- нашы качества -->
-        <section >
+        <section class="container">
             <h2 class="quality-title-none">Нашы качества</h2>
             <ul class="quality-item" >
                 <li> <h3 class="quality-title">Внимание к деталям</h3>
@@ -64,7 +67,8 @@
     
         <!-- Чем занимаемся -->
        
-        <section class="prof">
+        <section class="container">
+        >
             <h2 class="title-prof">Чем мы занимаемся</h2>
             <ul class="title-prof-item">
                 <li><img src="./images/img1.png" alt="ноутбук" width="370"> </li>
@@ -73,7 +77,8 @@
             </ul>
         </section>
         <!-- команда -->
-        <section>
+        <section class="container">
+        <div class="team-fon">
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-title-item">
                 <li> <img src="./images/ihor.jpg" alt="фото человека" width="260">
@@ -90,12 +95,13 @@
                 <p class="team-profession">UI Designer</p></li>
                 
             </ul>
+        </div>
         </section>
-    </div>
+   
 
     </main>
     <footer class="footer">
-         
+         <div class="container">
             <a href="#" class="logo-footer"><span class="color-logo-second">Web</span><span class="color-logo-footer">Studio</span></a>
             <address>
             <ul class="address">
@@ -104,7 +110,7 @@
                 <li><a href="tel:+380991111111" class="address-tel">+38 099 111 11 11</a></li>
             </ul>
             </address>
-       
-        </footer>
+        </div>
+    </footer>
 </body>
 </html>   

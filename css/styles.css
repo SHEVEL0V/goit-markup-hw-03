@@ -28,48 +28,26 @@ body {
 /* ---------container-------- */
 .container{
     width: 1200px;
-    padding: 94px 15px;
+    padding: 0px 15px;
     
     margin-left: auto;
     margin-right: auto;
-    
 
-    
+    padding-top: 94px;
 }
 
 /* -----------header------------- */
+  .header-border{
+      width: 1600px;
+      margin: 0 auto;
+      border-bottom: 1px solid #ECECEC;  }
+  
+    header .container{ 
+     display: flex;  
+     align-items: center;
 
-.header
-    {   
-        width: 1600px;
-        margin: 0 auto;
-        display: flex; 
-        align-items: center;  
-        padding: 0 215px; 
-
-        
-    }
-     
-
-
-  .nav-link-item
-    {display: flex;
-    margin-left: 93px; ; 
-  }
-  .item{
-        margin-right: 50px;}
-  .item:last-child{
-        margin-right: 0px
-  }
- 
-
-  .nav-link-contact{
-    display: flex;
-    margin-left: auto;
-    
-    
- 
-}
+     padding-top: 0px;
+    }   
 
 /* логотип */
 
@@ -81,22 +59,29 @@ body {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-
-   
 }
     .color-logo-basic{color: var(--color-head-basic);}
     .color-logo-second {color: var(--color-head-second)}
     .color-logo-footer{ color: var(--background-color-body);}
 
 /* навигация */
-   
-         
-        
 
-     .nav-link-item{ 
+    .nav-link-item{ 
         margin-top: 0;
-        margin-bottom: 0;}
+        margin-bottom: 0;
+        display: flex;
+        margin-left: 93px; }
 
+
+    .item{
+         margin-right: 50px;}
+    
+    .item:last-child{
+         margin-right: 0px}
+
+    .nav-link-contact{
+         display: flex;
+         margin-left: auto;}
 
     .link,
     .link-contact{
@@ -124,23 +109,30 @@ body {
     .link:focus{
      color: var(--color-head-second);
      }
-   
+     
      
  /*  ---------------------main--------------------- */
+
+
  /* заказ услуг */
-   
-    
+ 
+   .fon{
+      width: 1600px;
+      margin: 0 auto 0px auto;
+      
+      background-color: #2F303A;
+      display: block;}
 
-.hero{
-    display: block;
-    padding: 200px ;
-    text-align: center;
     
-    margin-bottom: 94px;
-    background-color: #2F303A;
-  }
+  
+    .button-container{
+        padding-top: 106px;
+        margin: 0  auto;  
+        width: 690px;
+        text-align: center;}    
 
- .hero-title{
+
+   .hero-title{
     
     
     font-weight: 900;
@@ -153,9 +145,11 @@ body {
 
     
  }
- .hero-button{
+  .hero-button{
+    
+    margin: 30px 0 200px 0;
     padding: 10px 32px;
-    margin-top: 30px;
+    
 
     font-weight: bold;
     font-size: 16px;
@@ -199,11 +193,9 @@ body {
     font-size: 14px;
     line-height: 1.7;
     
+    
  }
  /* чем мы занимаемся */
- .prof{
-     margin-top: 94px;
- }
 
  .title-prof{
     margin-bottom: 50px;
@@ -217,12 +209,17 @@ body {
  }
  .title-prof-item{
      display: flex;
-     justify-content:space-between
+     justify-content:space-between;
+
      
  }
  /* команда */
+.team-fon{
+    
+}
 .team-title{
-    margin-top: 188px;
+    
+    padding-top: 94px;
     
 
     font-weight: bold;
@@ -242,6 +239,7 @@ body {
     letter-spacing: 0.03em  ;
     color: var(--color-head-basic);
  }
+
 .team-title-item{
     display: flex;
     margin-top: 50px;
@@ -254,6 +252,17 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em}
+
+ .team-title-item li{
+    margin-bottom: 94px;
+
+    background-color: var(--background-color-body);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+     0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+ }   
     
 
 /* --------------footer------------- */
@@ -262,16 +271,20 @@ body {
     width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 60px 215px
-   
+
+    
 }
+.footer .container{
+    padding-top: 60px;
+    padding-bottom: 60px;}
+
+
 .address{
     padding-left: 0;
-}    
+   margin-bottom: 0;}
 
 .logo-footer{
     display: block;
-    
     margin-bottom: 20px;}
 
 
@@ -279,7 +292,6 @@ body {
 .address-info,
 .address-tel{
     display: block;
-    
 
     font-size: 14px;
     line-height: 1.7;
@@ -291,9 +303,6 @@ body {
         margin-bottom: 10px;
     }
     
-    .address{
-        margin-bottom: 0;
-    } 
 
  .address-street{color: var(--background-color-body);}
 
@@ -302,13 +311,13 @@ body {
   {color: rgba(255, 255, 255, 0.6)}  
 
 
-
-
-
-    /* ----------------------------------------------------------- */
-    /* -----Портфолио----- */
+/* ********************************************************** */
+/* ----------------------------------------------------------- */
+/* -----Портфолио----- */
 
 /* навигация */
+.portfolio{ margin-bottom: 94px;}
+
 .portfolio,
 .portfolio-naw{
     display: flex;
