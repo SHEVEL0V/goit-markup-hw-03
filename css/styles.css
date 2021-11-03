@@ -9,13 +9,15 @@
 
 /* ----------body-------------- */
 body {
-    
+    margin: 0;
+    box-sizing: border-box;
+
     background-color: var(--background-color-container) ;
     color: var(--color-content);
     font-family: Roboto , arial ;
     
 }
-    h1,h2,h3,ul
+    h1,h2,h3,ul,p
      {margin: 0;}
 
     ul{ list-style: none;
@@ -28,18 +30,19 @@ body {
 /* ---------container-------- */
 .container{
     width: 1200px;
-    padding: 0px 15px;
+    padding-right: 15px;
+    padding-left: 15px;
     
     margin-left: auto;
     margin-right: auto;
-
+}
+.padding{
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* -----------header------------- */
   .header-border{
-      width: 1600px;
-      margin: 0 auto;
       border-bottom: 1px solid #ECECEC;  }
   
     header .container{ 
@@ -115,25 +118,19 @@ body {
 
 
  /* заказ услуг */
- 
-   .fon{
-      width: 1600px;
-      margin: 0 auto 0px auto;
-      
-      background-color: #2F303A;
-      display: block;}
-
-    
+    .fon{
+        padding: 200px 0;
+        background-color: #2F303A;}
   
     .button-container{
-        padding-top: 106px;
+       
         margin: 0  auto;  
         width: 690px;
         text-align: center;}    
 
 
    .hero-title{
-    
+    padding-bottom: 30px;
     
     font-weight: 900;
     font-size: 44px;
@@ -146,11 +143,8 @@ body {
     
  }
   .hero-button{
-    
-    margin: 30px 0 200px 0;
     padding: 10px 32px;
     
-
     font-weight: bold;
     font-size: 16px;
     line-height: 1.88;
@@ -158,7 +152,6 @@ body {
     
     cursor: pointer;
 
-    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
@@ -178,7 +171,13 @@ body {
      display: flex;
  }
 
+ .quality-item li{
+     width: 270px;
+     margin-left: 30px;
+ }
  .quality-title{
+    padding-bottom: 10px;
+
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -198,7 +197,7 @@ body {
  /* чем мы занимаемся */
 
  .title-prof{
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 
     font-weight: bold;
     font-size: 36px;
@@ -210,17 +209,15 @@ body {
  .title-prof-item{
      display: flex;
      justify-content:space-between;
-
-     
+ 
+     padding-bottom: 94px;
  }
  /* команда */
-.team-fon{
+  .team-fon{
     
 }
 .team-title{
-    
-    padding-top: 94px;
-    
+    padding-bottom: 50px;
 
     font-weight: bold;
     font-size: 36px;
@@ -229,9 +226,14 @@ body {
     letter-spacing: 0.03em;
     color: var(--color-head-basic);
 }
- 
-
+.team-title-item{
+    display: flex;
+    justify-content:space-between
+}
  .team-titles{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -240,22 +242,15 @@ body {
     color: var(--color-head-basic);
  }
 
-.team-title-item{
-    display: flex;
-    margin-top: 50px;
-    justify-content:space-between
-}
-
-
 .team-profession{
+    padding-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em}
 
  .team-title-item li{
-    margin-bottom: 94px;
-
     background-color: var(--background-color-body);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -266,27 +261,19 @@ body {
     
 
 /* --------------footer------------- */
-.footer{
+.fon-footer{
     background-color: #2F303A;
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
 
-    
-}
-.footer .container{
     padding-top: 60px;
     padding-bottom: 60px;}
-
-
+    
 .address{
     padding-left: 0;
    margin-bottom: 0;}
 
 .logo-footer{
     display: block;
-    margin-bottom: 20px;}
-
+    padding-bottom: 20px;}
 
 .address-street,
 .address-info,
@@ -298,9 +285,9 @@ body {
     letter-spacing: 0.03em;
     font-style: normal}
     
-    .address-street,
-    .address-info{
-        margin-bottom: 10px;
+.address-street,
+.address-info{
+    padding-bottom: 10px;
     }
     
 
@@ -316,24 +303,20 @@ body {
 /* -----Портфолио----- */
 
 /* навигация */
-.portfolio{ margin-bottom: 94px;}
 
-.portfolio,
 .portfolio-naw{
     display: flex;
-    flex-wrap:wrap;
-    padding: 0;
+    
 }
 .portfolio-naw{
-    margin-left: 215px;
-    margin-right: 215px;
-    justify-content: space-between;
-    
-    margin-bottom: 50px;
+    justify-content: center;
+   
+    padding-bottom: 50px;
 }
 
-.portfolio-button{  
-     padding: 6px 22px;
+.portfolio-button{
+    margin-right: 8px;  
+    padding: 6px 22px;
 
     font-family:Roboto ;
     font-weight: 500;
@@ -349,6 +332,8 @@ body {
     
 }
 
+
+
 .portfolio-button:hover,
 .portfolio-button:focus
 {
@@ -360,15 +345,27 @@ body {
 }
 
 /* портфолио */
-.portfolio-title-none{color: var(--background-color-body);}
+.portfolio{
+    display: flex;
+    flex-wrap:wrap;
+}
 .portfolio-title{
+    padding-top: 20px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-head-basic);
+
+    
 }
 .poltfolio-desc{
+    padding-bottom: 20px;
+    padding-left: 24px;
+
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
@@ -377,6 +374,15 @@ body {
 .portfolio-item{
     margin-right: 30px;
     margin-bottom: 30px;
+
+
+    border: 1px solid #EEEEEE
+    box-shadow: 1px 4px 6px 0px #00000029;
+
+    box-shadow: 0px 4px 4px 0px #0000000F;
+
+    box-shadow: 0px 1px 1px 0px #0000001F;
+
 }   
 .portfolio-item:nth-child(3n+3)
     {margin-right: 0px;}
